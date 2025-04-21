@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Guilherme Oliveira - Portfólio</title>
+  </head>
+
+  <div id="modal" class="modal" onclick="closeModal()">
+    <img id="modal-img" />
+    <p id="modal-info"></p>
+  </div>
+
+  <body>
+    <aside>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>  
+    
+      <div class="profile">
+        <p style="font-weight: bold;">
+          📁<br />
+          Portfólio 
+        </p>
+
+        <div class="img-frame">
+          <a href="https://br.linkedin.com/in/guilherme-santos777" target="_blank"
+            ><img src="./img/Guilherme.jpeg" alt="Foto do Guilherme"
+          /></a>
+        </div>
+
+        <p>        
+          <a
+            href="https://br.linkedin.com/in/guilherme-santos777"
+            target="_blank"
+          >
+            <strong>👨🏽‍💻 Guilherme Santos</strong>
+          </a>
+        </p>
+
+        <span>
+          🚀 Built with HTML and CSS, 
+          and powered by determination and lots of coffee. 🚀
+        </span>
+      </div>
+    </aside>    
+
+    <nav class="memory">
+      <!-- ABOUT -->
+      <small>April 2025</small>
+      <a
+        href="https://br.linkedin.com/in/guilherme-santos777"
+        target="_blank"
+        title="LinkedIn de Guilherme"
+        alt="LinkedIn de Guilherme"
+      >
+        <h1 id="about">🎓 About Me</h1>
+      </a>
+      <p>
+        Hello! I'm Guilherme, I have a degree in Information Technology
+        Management and am currently studying Computer Networks Technician
+        (SENAI). I have practical experience with web development (Front-End and
+        Back-End), Python automation, IT support, and administrative and
+        purchasing routines. Passionate about solving problems with code and
+        technology, I always seek to improve processes through digital
+        solutions.
+      </p>
+
+      <!-- SKILLS -->
+      <small>April 2025</small>
+      <h1 id="skills">🛠️ Technical Skills</h1>
+      </a>
+      <p>
+        • Python (Flask, OpenPyXL, FPDF)<br />
+        • HTML, CSS, JavaScript (basic)<br />
+        • SQL, Google Sheets API<br />
+        • ESP-IDF (IoT Projects with ESP32)<br />
+        • Excel Automation & Data Processing<br />
+        • IT Support & Network Basics
+      </p>
+
+      <!-- PROJECTS -->
+      <small>April 2025</small>
+      <h1 id="projects">🚀 Projects</h1>
+
+      <p>
+        <strong>1. Web App for Sweepstakes (Full-Stack)</strong><br />
+        Built using Flask, HTML/CSS, JavaScript, SQL. Generates PDF reports and stores data in a local database.<br />
+        <a href="https://github.com/Gui71/project-site" target="_blank">View on GitHub</a>
+      </p>
+      <p class="carousel"><strong>📷🎥 Demonstration</strong></p>
+      <div class="video-carousel">
+        <div class="img-carousel">
+          <video controls>
+            <source src="./video/sorteio1.mp4" type="video/mp4" alt="sorteio1"/>
+            Your browser does not support the video tag.
+          </video>
+          <span class="info">
+            “Demonstration of the full system workflow — 
+            from participant registration to the protected internal area (login required), 
+            showing access to the entire database of registered users including sensitive data.”
+          </span>
+        </div>
+        <div class="img-carousel">
+          <img src="./img/sorteio1.png" type="image/png" alt="Closing Message (After Deadline)" onclick="openModal(this)"/>
+          <span class="info">
+            “Screenshot of the final registration stage, 
+            informing users that the deadline has passed when they try to sign up.”
+          </span>
+        </div>
+        <div class="img-carousel">
+          <img src="./img/sorteio2.png" type="image/png" alt="Login area used to access the full list of registered participants (restricted)" onclick="openModal(this)"/>
+          <span class="info">
+            “Login area used to access the full list of registered participants. 
+            Restricted access to maintain data confidentiality.”
+          </span>
+        </div>
+      </div>
+
+      <p>
+        <strong>2. Google Sheets Automation</strong><br />
+        Automates employee data entry into formatted spreadsheets using Python and Google Sheets API.<br />
+        <a href="https://github.com/Gui71/insert-automated-data" target="_blank">View on GitHub</a>
+      </p>
+      <p class="carousel"><strong>📷🎥 Demonstration</strong></p>
+      <div class="video-carousel">
+        <div class="img-carousel">
+          <video controls>
+            <source src="./video/planilha1.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+          </video>
+          <span class="info">
+            “Executable demo created with PyInstaller: 
+            fills a Google Sheets spreadsheet using an automated script for structured employee data entry.”
+          </span>
+        </div>
+        <div class="img-carousel">
+          <video controls>
+            <source src="./video/planilha2.mp4" type="video/mp4" alt="planilha2"/>
+            Your browser does not support the video tag.
+          </video>
+          <span class="info">
+            “Small utility built in Google Apps Script (.gs) 
+            that sorts spreadsheet tabs alphabetically for better organization.”
+          </span>
+        </div>
+      </div>
+
+      <p>
+        <strong>3. Personal Portfolio Website</strong><br />
+        Designed and built from scratch using HTML, CSS, responsive layout techniques and subtle animations. This site itself is one of my personal projects.<br />
+        <a href="https://github.com/Gui71/GuilhermeOliveira_portfolio" target="_blank">View Project</a>
+      </p>
+      <p class="carousel"><strong>📷🎥 Demonstration</strong></p>
+      <div class="video-carousel">
+        <div class="img-carousel">
+          <img src="./img/portfolio-prev.png" type="image/png" alt="Screenshot of this portfolio" onclick="openModal(this)"/>
+          <span class="info">
+            “Screenshot of this portfolio — built with HTML, CSS and animations. You're viewing it right now!”
+          </span>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+       <small>April 2025</small>
+       <h1 id="contact">📬 Contact</h1>
+       <p class="p-space">
+        Email: <a href="mailto:guilhermeoliveira329@outlook.com"> guilhermeoliveira329@outlook.com</a><br />
+        GitHub: <a href="https://github.com/Gui71" target="_blank"> github.com/Gui71</a><br />
+        LinkedIn: <a href="https://br.linkedin.com/in/guilherme-santos777" target="_blank"> linkedin.com/in/guilherme-santos777</a>
+       </p>
+    </nav>
+
+    <script>
+      function openModal(img) {
+        const modal = document.getElementById("modal");
+        const modalImg = document.getElementById("modal-img");
+        const modalInfo = document.getElementById("modal-info");
+
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        modalInfo.innerText = img.alt;
+      }
+
+      function closeModal() {
+        document.getElementById("modal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
