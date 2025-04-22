@@ -1,43 +1,57 @@
 # 🌐 Guilherme's Developer Portfolio
 
-This is my personal portfolio website, designed and coded from scratch using **HTML** and **CSS**, fully responsive and minimalistic. The goal was to present my main projects clearly and visually, highlighting my ability to develop interfaces and structure content in an organized way.
+This is my personal portfolio, designed and developed entirely from scratch using **HTML** and **CSS** — with a focus on responsive layout and visual polish. It highlights my most relevant personal projects, professional skills, and technology experience.
 
-## 🔧 Built With
+## 🚀 Live Preview
+
+🔗 [Access Portfolio](https://gui71.github.io/GuilhermeOliveira_portfolio/)
+
+---
+
+## 🛠 Technologies Used
 
 - HTML5
 - CSS3
-- Responsive Layout (Media Queries, Flex/Grid)
-- CSS Animations & Gradients
+- Responsive layout (Media Queries, Grid, Flexbox)
+- CSS animations
+- Pure JavaScript (lightweight modal logic)
 
-## 📁 Projects Showcased
+---
 
-1. **Online Raffle System**  
-   A full web app that handles participant registration, password-protected internal data access, and PDF report generation and spreadsheet reports with all registrations.
+## 📂 Featured Projects
 
-2. **Google Sheets Automation**  
-   A Python-based automation for employee data entry into Google Sheets, including an alphabetical tab sorter using Google Apps Script.
+### 1. **Web Application for Giveaways (Full-Stack)**
+A system that manages participant registration, protected login to access an internal database and generation of PDF and spreadsheets with all registrations. **Powered by:** Python (Flask), HTML/CSS, SQL
+🔗 [View project on GitHub](https://github.com/Gui71/project-site)
 
-3. **This Portfolio**  
-   The site you're browsing right now. Custom-made without templates, demonstrating my front-end skills and attention to detail.
+### 2. **Google Sheets Automation**
+Python-based automation that populates spreadsheets with structured employee data, with tabbed sorting capability via Google Apps Script.
+**Powered by:** Python, Google Sheets API, Apps Script
+🔗 [View project on GitHub](https://github.com/Gui71/insert-automated-data)
 
-## 🎯 Goals
+### 3. **This Portfolio Site**
+You're viewing this right now! A fully customized, lightweight, and responsive website with modular content and a professional layout. **Built with:** HTML, CSS
+🔗 [View source](https://github.com/Gui71/GuilhermeOliveira_portfolio)
 
-- Present my experience and tech skills in a professional format  
-- Demonstrate practical applications of programming, automation, and UI design  
-- Make it easy to navigate and fast to load
+---
 
-## 📸 Media
+## 📸 Media and Screenshots
 
-The portfolio includes short demo videos and screenshots for each project, along with descriptions and modal previews.
+Each project includes demo videos and screenshots, with a modal preview system for images and videos.
 
-## 🚀 Live Demo
+---
 
-> Coming soon: GitHub Pages deployment URL here!
+## 💼 About Me
+
+My name is **Guilherme Santos**, I have a degree in **Information Technology Management** and I am currently studying **Computer Networks Technician** at SENAI. I work with automation in Python, full-stack development (Flask + SQL) and network/IT support, as well as administrative routines.
+
+---
 
 ## 📬 Contact
 
-If you want to collaborate, hire, or chat about tech and ideas:
-- 📧 [guilhermeoliveira329@outlook.com](mailto:guilhermeoliveira329@outlook.com)
-- 🔗 [GitHub](https://github.com/Gui71)
+- 📧 Email: [guilhermeoliveira329@outlook.com](mailto:guilhermeoliveira329@outlook.com)
+- 💻 GitHub: [github.com/Gui71](https://github.com/Gui71)
+- 🔗 LinkedIn: [linkedin.com/in/guilherme-santos777](https://www.linkedin.com/in/guilherme-santos777)
 
+--
 ---
