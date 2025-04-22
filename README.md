@@ -18,7 +18,7 @@ This is my personal portfolio, designed and developed entirely from scratch usin
 
 ---
 
-## 📂 Featured Projects
+## 🚀 Featured Projects
 
 ### 1. **Web Application for Giveaways (Full-Stack)**
 A system that manages participant registration, protected login to access an internal database and generation of PDF and spreadsheets with all registrations. **Powered by:** Python (Flask), HTML/CSS, SQL
