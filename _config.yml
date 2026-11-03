@@ -1,0 +1,23 @@
+# Exclusões para GitHub Pages servido por Jekyll a partir da branch.
+# Não usar .nojekyll no checkout: ele desativaria estas exclusões.
+exclude:
+  - AGENTS.md
+  - curriculo_referencia
+  - video
+  - img/sorteio1.png
+  - img/sorteio2.png
+  - img/portfolio-prev.png
+  - img/background.svg
+  - README.md
+  - DEPLOY-ORACLE.md
+  - VALIDACAO.md
+  - Dockerfile
+  - compose.portfolio.yml
+  - deploy
+  - scripts
+  - tests
+  - dist
+  - docs
+  - .codex
+  - .agents
+  - .superpowers

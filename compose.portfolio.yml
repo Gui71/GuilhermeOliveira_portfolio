@@ -1,0 +1,17 @@
+name: guilherme-portfolio
+services:
+  portfolio:
+    image: guilherme-portfolio:${PORTFOLIO_IMAGE_TAG:?Defina a tag da versao revisada}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${PORTFOLIO_HOST_PORT:?Defina uma porta local livre}:80"
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "2"

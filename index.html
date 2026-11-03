@@ -1,214 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-    <link rel="manifest" href="./img/site.webmanifest">
-    <link rel="icon" type="image/png" sizes="192x192" href="./img/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="./img/android-chrome-512x512.png">
-    <link rel="shortcut icon" href="./img/favicon.ico"> 
-    
-    <link rel="stylesheet" href="./styles.css" />
-
-    <title>Guilherme Oliveira - Portfólio</title>
-  </head>
-
-  <div id="modal" class="modal" onclick="closeModal()">
-    <img id="modal-img" />
-    <p id="modal-info"></p>
-  </div>
-
-  <body>
-    <aside>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>  
-    
-      <div class="profile">
-        <p style="font-weight: bold;">
-          📁<br />
-          Portfólio 
-        </p>
-
-        <div class="img-frame">
-          <a href="https://br.linkedin.com/in/guilherme-santos777" target="_blank"
-            ><img src="./img/Guilherme.jpeg" alt="Foto do Guilherme"
-          /></a>
-        </div>
-
-        <p>        
-          <a
-            href="https://br.linkedin.com/in/guilherme-santos777"
-            target="_blank"
-          >
-            <strong>👨🏽‍💻 Guilherme Santos</strong>
-          </a>
-        </p>
-
-        <span>
-          🚀 Built with HTML and CSS, 
-          and powered by determination and lots of coffee. 🚀
-        </span>
-      </div>
-    </aside>    
-
-    <nav class="memory">
-      <!-- ABOUT -->
-      <small>April 2025</small>
-      <a
-        href="https://br.linkedin.com/in/guilherme-santos777"
-        target="_blank"
-        title="LinkedIn de Guilherme"
-        alt="LinkedIn de Guilherme"
-      >
-        <h1 id="about">🎓 About Me</h1>
-      </a>
-      <p>
-        Hello! I'm Guilherme, I have a degree in Information Technology
-        Management and am currently studying Computer Networks Technician
-        (SENAI). I have practical experience with web development (Front-End and
-        Back-End), Python automation, IT support, and administrative and
-        purchasing routines. Passionate about solving problems with code and
-        technology, I always seek to improve processes through digital
-        solutions.
-      </p>
-
-      <!-- SKILLS -->
-      <small>April 2025</small>
-      <h1 id="skills">🛠️ Technical Skills</h1>
-      </a>
-      <p>
-        • Python (Flask, OpenPyXL, FPDF)<br />
-        • HTML, CSS, JavaScript (basic)<br />
-        • SQL, Google Sheets API<br />
-        • ESP-IDF (IoT Projects with ESP32)<br />
-        • Excel Automation & Data Processing<br />
-        • IT Support & Network Basics
-      </p>
-
-      <!-- PROJECTS -->
-      <small>April 2025</small>
-      <h1 id="projects">🚀 Projects</h1>
-
-      <p>
-        <strong>1. Web App for Sweepstakes (Full-Stack)</strong><br />
-        Built using Flask, HTML/CSS, JavaScript, SQL. Generates PDF reports and stores data in a local database.<br />
-        <a href="https://github.com/Gui71/project-site" target="_blank">View on GitHub</a>
-      </p>
-      <p class="carousel"><strong>📷🎥 Demonstration</strong></p>
-      <div class="video-carousel">
-        <div class="img-carousel">
-          <video controls>
-            <source src="./video/sorteio1.mp4" type="video/mp4" alt="sorteio1"/>
-            Your browser does not support the video tag.
-          </video>
-          <span class="info">
-            “Demonstration of the full system workflow — 
-            from participant registration to the protected internal area (login required), 
-            showing access to the entire database of registered users including sensitive data.”
-          </span>
-        </div>
-        <div class="img-carousel">
-          <img src="./img/sorteio1.png" type="image/png" alt="Closing Message (After Deadline)" onclick="openModal(this)"/>
-          <span class="info">
-            “Screenshot of the final registration stage, 
-            informing users that the deadline has passed when they try to sign up.”
-          </span>
-        </div>
-        <div class="img-carousel">
-          <img src="./img/sorteio2.png" type="image/png" alt="Login area used to access the full list of registered participants (restricted)" onclick="openModal(this)"/>
-          <span class="info">
-            “Login area used to access the full list of registered participants. 
-            Restricted access to maintain data confidentiality.”
-          </span>
-        </div>
-      </div>
-
-      <p>
-        <strong>2. Google Sheets Automation</strong><br />
-        Automates employee data entry into formatted spreadsheets using Python and Google Sheets API.<br />
-        <a href="https://github.com/Gui71/insert-automated-data" target="_blank">View on GitHub</a>
-      </p>
-      <p class="carousel"><strong>📷🎥 Demonstration</strong></p>
-      <div class="video-carousel">
-        <div class="img-carousel">
-          <video controls>
-            <source src="./video/planilha1.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-          </video>
-          <span class="info">
-            “Executable demo created with PyInstaller: 
-            fills a Google Sheets spreadsheet using an automated script for structured employee data entry.”
-          </span>
-        </div>
-        <div class="img-carousel">
-          <video controls>
-            <source src="./video/planilha2.mp4" type="video/mp4" alt="planilha2"/>
-            Your browser does not support the video tag.
-          </video>
-          <span class="info">
-            “Small utility built in Google Apps Script (.gs) 
-            that sorts spreadsheet tabs alphabetically for better organization.”
-          </span>
-        </div>
-      </div>
-
-      <p>
-        <strong>3. Personal Portfolio Website</strong><br />
-        Designed and built from scratch using HTML, CSS, responsive layout techniques and subtle animations. This site itself is one of my personal projects.<br />
-        <a href="https://github.com/Gui71/GuilhermeOliveira_portfolio" target="_blank">View Project</a>
-      </p>
-      <p class="carousel"><strong>📷🎥 Demonstration</strong></p>
-      <div class="video-carousel">
-        <div class="img-carousel">
-          <img src="./img/portfolio-prev.png" type="image/png" alt="Screenshot of this portfolio" onclick="openModal(this)"/>
-          <span class="info">
-            “Screenshot of this portfolio — built with HTML, CSS and animations. You're viewing it right now!”
-          </span>
-        </div>
-      </div>
-
-      <!-- CONTACT -->
-       <small>April 2025</small>
-       <h1 id="contact">📬 Contact</h1>
-       <p class="p-space">
-        Email: <a href="mailto:guilhermeoliveira329@outlook.com"> guilhermeoliveira329@outlook.com</a><br />
-        GitHub: <a href="https://github.com/Gui71" target="_blank"> github.com/Gui71</a><br />
-        LinkedIn: <a href="https://br.linkedin.com/in/guilherme-santos777" target="_blank"> linkedin.com/in/guilherme-santos777</a>
-       </p>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121215">
+  <title>Guilherme Oliveira | Sistemas, automação e infraestrutura de TI</title>
+  <meta name="description" content="Portfólio de Guilherme Oliveira: projetos de sistemas e automação, experiência em suporte e redes, formação e contato profissional.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Guilherme Oliveira | Portfólio de TI">
+  <meta property="og:description" content="Desenvolvimento de sistemas, automação, suporte técnico, redes e infraestrutura. Conheça meus projetos e minha trajetória.">
+  <link rel="icon" href="./img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+  <link rel="manifest" href="./img/site.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="signature" href="#inicio" aria-label="Guilherme Oliveira — início">GO<span aria-hidden="true">.</span></a>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#inicio">Início</a></li><li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li><li><a href="#competencias">Competências</a></li>
+        <li><a href="#experiencia">Experiência</a></li><li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
-
-    <script>
-      function openModal(img) {
-        const modal = document.getElementById("modal");
-        const modalImg = document.getElementById("modal-img");
-        const modalInfo = document.getElementById("modal-info");
-
-        modal.style.display = "flex";
-        modalImg.src = img.src;
-        modalInfo.innerText = img.alt;
-      }
-
-      function closeModal() {
-        document.getElementById("modal").style.display = "none";
-      }
-    </script>
-  </body>
+  </header>
+  <main id="conteudo" tabindex="-1">
+    <section id="inicio" class="hero" aria-labelledby="titulo">
+      <div>
+        <p class="eyebrow">Portfólio profissional · Tecnologia da Informação</p>
+        <h1 id="titulo">Guilherme<br>Oliveira<span class="accent">.</span></h1>
+        <p class="hero-lead">Sistemas e automação para facilitar o trabalho de quem usa a tecnologia.</p>
+        <p>Atuo com desenvolvimento de sistemas, automação, suporte técnico, redes e infraestrutura. Conecto a experiência em processos administrativos à construção de soluções para o dia a dia.</p>
+        <div class="actions"><a class="button" href="#projetos">Conheça os projetos <span aria-hidden="true">↗</span></a><a class="button secondary" href="#contato">Vamos conversar</a></div>
+      </div>
+      <figure class="portrait">
+        <a href="./img/Guilherme.jpeg" id="portrait-link" aria-label="Ampliar foto de Guilherme Oliveira"><img src="./img/Guilherme.jpeg" alt="Guilherme Oliveira" width="493" height="446" fetchpriority="high"></a>
+        <figcaption>Guilherme Oliveira dos Santos<br><span>Desenvolvimento · Automação · Suporte e redes</span></figcaption>
+      </figure>
+    </section>
+    <section id="sobre" aria-labelledby="sobre-titulo">
+      <p class="eyebrow">01 / Sobre</p><h2 id="sobre-titulo">Da rotina operacional à solução digital</h2>
+      <div class="about-grid"><p>Sou graduado em Gestão da Tecnologia da Informação e técnico em Redes de Computadores. No SENALBA, meu cargo formal é Assistente Administrativo, com atuação também em sistemas, planilhas, suporte a usuários e manutenção de conectividade.</p>
+      <p>Nos projetos, participo da análise de requisitos, organização de fluxos, integração, testes e entrega, com apoio de ferramentas de IA no desenvolvimento e na depuração. Busco oportunidades em TI para aplicar essa combinação de visão de processo e prática técnica.</p></div>
+      <p class="callout">Em duas soluções de automação, processos que exigiam cinco ou mais pessoas simultaneamente passaram a poder ser operacionalizados por uma pessoa.</p>
+    </section>
+    <section id="projetos" aria-labelledby="projetos-titulo">
+      <p class="eyebrow">02 / Projetos selecionados</p><h2 id="projetos-titulo">Tecnologia aplicada a problemas reais</h2>
+      <p class="section-intro">Entregas em uso, trabalho colaborativo e projetos em evolução, com a situação de cada solução indicada abaixo.</p>
+      <div class="project-grid">
+        <article class="card"><p class="status">Uso interno · Concluído, com melhorias pontuais</p><h3>Automação de oposições e registros internos</h3><p>Solução para organizar registros e consultar bases históricas, integrando uma aplicação Django ao Google Sheets. Atuação na estruturação dos fluxos, integração e testes para simplificar a rotina operacional.</p><p class="project-note">Utilizada na rede interna. Sem demonstração pública para preservar os dados.</p><ul class="tags" aria-label="Tecnologias"><li>Python</li><li>Django</li><li>Google Sheets API / gspread</li></ul></article>
+        <article class="card"><p class="status">Em uso · Acesso restrito</p><h3>Plataforma de inscrições e sorteios</h3><p>Aplicação Flask com frontend vanilla para registros, controle de acesso e geração automatizada de documentos. Atuação na organização dos requisitos, integração e validação dos fluxos, trazendo agilidade às operações.</p><p class="project-note">Demonstrações internas não estão disponíveis nesta versão pública.</p><ul class="tags" aria-label="Tecnologias"><li>Flask</li><li>HTML / CSS / JavaScript</li><li>SQL</li></ul></article>
+        <article class="card"><p class="status developing">Em desenvolvimento avançado · Ajustes de segurança</p><h3>Gestão de ambulatório multiprofissional</h3><p>Sistema com fluxos de gestão e atendimento, usando Django e Django REST Framework. Atuação na análise de requisitos, integração e testes, com ajustes de segurança ainda em andamento.</p><p class="project-note">Descrição genérica; identidade do contratante e informações clínicas preservadas.</p><ul class="tags" aria-label="Tecnologias"><li>Django / DRF</li><li>APIs REST</li><li>JavaScript vanilla</li></ul></article>
+        <article class="card"><p class="status">Projeto acadêmico colaborativo · Em produção</p><h3>MAVEN — gestão e inventário</h3><p>Projeto desenvolvido em equipe no SENAI, com backend Django e interface web para gestão e inventário. Participação no desenvolvimento e na integração. Executado inicialmente em servidor físico e depois hospedado na Oracle Cloud.</p><ul class="tags" aria-label="Tecnologias"><li>Django</li><li>Frontend web</li><li>Oracle Cloud</li></ul><a class="text-link" href="https://mavensec.com.br" target="_blank" rel="noopener noreferrer">Visitar MAVEN <span aria-hidden="true">↗</span><span class="sr-only"> (abre em nova aba)</span></a></article>
+        <article class="card"><p class="status developing">Em desenvolvimento · Revisão humana obrigatória</p><h3>Automação assistida de documentos de licitações</h3><p>Workflow com Codex CLI para organizar diretórios, analisar editais e preparar documentos. Instruções por projeto orientam o processo; os documentos produzidos dependem de conferência humana antes do uso.</p><ul class="tags" aria-label="Tecnologias"><li>Codex CLI</li><li>Organização de fluxos</li><li>Documentação</li></ul></article>
+        <article class="card portfolio-card"><p class="status">Projeto pessoal · Publicação estática</p><h3>Este portfólio</h3><p>HTML, CSS e JavaScript sem frameworks, com navegação acessível, layout responsivo e publicação no GitHub Pages. Preparado para futura hospedagem em container estático isolado.</p><ul class="tags" aria-label="Tecnologias"><li>HTML5 / CSS3</li><li>JavaScript</li><li>Docker / Nginx</li></ul><a class="text-link" href="https://github.com/Gui71/GuilhermeOliveira_portfolio" target="_blank" rel="noopener noreferrer">Código do portfólio <span aria-hidden="true">↗</span><span class="sr-only"> (abre em nova aba)</span></a></article>
+      </div>
+    </section>
+    <section id="competencias" aria-labelledby="competencias-titulo">
+      <p class="eyebrow">03 / Competências</p><h2 id="competencias-titulo">Conhecimento com contexto</h2>
+      <div class="skills-grid">
+        <article><h3>Sistemas e automação</h3><p>Aplicação em projetos com Python, Django, DRF, Flask, HTML5, CSS3 e JavaScript vanilla. Integração de APIs REST, planilhas e Google Sheets API/gspread.</p></article>
+        <article><h3>Dados e infraestrutura</h3><p>Uso em projetos de SQL, SQLite, PostgreSQL, Git/GitHub, Linux, Docker/Compose, Nginx, Gunicorn e Oracle Cloud.</p></article>
+        <article><h3>Redes e suporte</h3><p>Prática em diagnóstico, equipamentos, impressoras, conectividade e compartilhamento. Formação em TCP/IP, roteamento, switching, serviços de rede e segurança.</p></article>
+        <article><h3>Processos e comunicação</h3><p>Experiência com rotinas administrativas, planilhas, compras, estoque, fornecedores e apoio digital. Inglês básico, especialmente para leitura técnica.</p></article>
+      </div>
+    </section>
+    <section id="experiencia" aria-labelledby="experiencia-titulo">
+      <p class="eyebrow">04 / Experiência</p><h2 id="experiencia-titulo">Trajetória profissional</h2>
+      <ol class="timeline">
+        <li><p class="period">Jul/2024 — atual</p><div><h3>Assistente Administrativo <span>· SENALBA</span></h3><p>Vínculo formal administrativo. Atuação também com desenvolvimento e automação de sistemas, planilhas, suporte a equipamentos e usuários, impressoras, manutenção de rede, conectividade e apoio digital e de marketing.</p></div></li>
+        <li><p class="period">Jul/2021 — mai/2024</p><div><h3>Almoxarife <span>· UP Hotel Ltda. / ibis Nova América</span></h3><p>Compras, controle de estoque, notas fiscais, relacionamento com fornecedores e uso de sistemas administrativos.</p></div></li>
+        <li><p class="period">2017</p><div><h3>Aprendiz administrativo <span>· Formação via SENAI</span></h3><p>Experiência de aprendizagem em rotinas administrativas.</p></div></li>
+      </ol>
+    </section>
+    <section id="formacao" aria-labelledby="formacao-titulo">
+      <p class="eyebrow">05 / Formação</p><h2 id="formacao-titulo">Base acadêmica e técnica</h2>
+      <div class="education-grid">
+        <article class="card"><p class="period">Concluída em 30/06/2024</p><h3>Gestão da Tecnologia da Informação</h3><p>Graduação · Universidade Estácio de Sá</p></article>
+        <article class="card"><p class="period">Fev/2025 — abr/2026 · 1.000 horas</p><h3>Técnico em Redes de Computadores</h3><p>SENAI Maracanã · Concluído</p></article>
+        <article class="card"><p class="period">2017 · 480 horas</p><h3>Assistente Administrativo</h3><p>SENAI</p></article>
+      </div>
+      <p class="complementary"><strong>Formação complementar selecionada:</strong> cursos SENAI em Linux, Cisco, 5G, FTTH, redes e segurança. Fundação Bradesco: Modelagem de Dados (8h), Implementando Banco de Dados (15h) e Administrando Banco de Dados (15h).</p>
+    </section>
+    <section id="contato" class="contact" aria-labelledby="contato-titulo">
+      <p class="eyebrow">06 / Contato</p><h2 id="contato-titulo">Vamos conversar sobre TI?</h2><p>Para oportunidades em desenvolvimento, automação, suporte e infraestrutura, entre em contato por e-mail ou conheça meu perfil no GitHub.</p>
+      <div class="actions"><a class="button" href="mailto:guilhermeoliveira329@outlook.com">Enviar e-mail <span aria-hidden="true">↗</span></a><a class="button secondary" href="https://github.com/Gui71" target="_blank" rel="noopener noreferrer">GitHub / Gui71<span class="sr-only"> (abre em nova aba)</span></a></div>
+      <a class="email" href="mailto:guilhermeoliveira329@outlook.com">guilhermeoliveira329@outlook.com</a>
+    </section>
+  </main>
+  <footer><p>Guilherme Oliveira · Portfólio profissional</p><a href="#inicio">Voltar ao início ↑</a></footer>
+  <dialog id="portrait-dialog" aria-labelledby="portrait-title">
+    <div class="dialog-heading"><h2 id="portrait-title">Guilherme Oliveira</h2><button type="button" id="close-dialog" autofocus>Fechar <span aria-hidden="true">×</span></button></div>
+    <img src="./img/Guilherme.jpeg" alt="Retrato ampliado de Guilherme Oliveira" width="493" height="446" loading="lazy">
+  </dialog>
+</body>
 </html>
