@@ -23,9 +23,5 @@ node_modules/
 dist/
 *.log
 .DS_Store
-**/DEPLOY-ORACLE.md
-**/VALIDACAO.md
-**/README.md
-DEPLOY-ORACLE.md
-VALIDACAO.md
-README.md
+# Documentação e instruções permanecem apenas no ambiente local.
+*.[mM][dD]
