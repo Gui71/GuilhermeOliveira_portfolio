@@ -187,20 +187,36 @@ section {
   color:var(--accent)
 }
 .portrait {
-  padding:1rem;
-  border:1px solid #56505f;
-  border-radius:120px 120px 12px 12px;
-  background:linear-gradient(150deg,#312842,#1b1b22 70%)
+  width:min(100%,340px);
+  justify-self:center;
+  text-align:center
 }
 .portrait img {
   width:100%;
-  border-radius:110px 110px 6px 6px;
-  aspect-ratio:493/446;
-  object-fit:cover
+  height:auto;
+  aspect-ratio:1;
+  border-radius:50%;
+  object-fit:cover;
+  object-position:center 24%
 }
 .portrait a {
   display:block;
-  border-radius:110px 110px 6px 6px
+  padding:6px;
+  border:1px solid #56505f;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--accent),var(--warm));
+  box-shadow:0 16px 40px #0005;
+  transition:transform .22s ease,box-shadow .22s ease
+}
+.portrait a:focus-visible {
+  transform:scale(1.04);
+  box-shadow:0 0 0 6px #c1a4ff22
+}
+@media(hover:hover) and (pointer:fine) {
+  .portrait a:hover {
+    transform:scale(1.04);
+    box-shadow:0 20px 48px #0007
+  }
 }
 .portrait figcaption {
   padding:.9rem .2rem .2rem;
@@ -481,6 +497,10 @@ body:has(dialog[open]) {
   }
 }
 @media(prefers-reduced-motion:reduce) {
+  .portrait a:hover,
+  .portrait a:focus-visible {
+    transform:none
+  }
   html {
     scroll-behavior:auto
   }

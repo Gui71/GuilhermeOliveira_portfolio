@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_FILES = (
     'index.html', 'styles.css', 'script.js',
-    'img/Guilherme.jpeg', 'img/favicon.ico', 'img/favicon-16x16.png',
+    'img/guilherme.jpeg', 'img/favicon.ico', 'img/favicon-16x16.png',
     'img/favicon-32x32.png', 'img/apple-touch-icon.png',
     'img/android-chrome-192x192.png', 'img/android-chrome-512x512.png',
     'img/site.webmanifest',

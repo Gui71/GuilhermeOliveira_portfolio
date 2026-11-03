@@ -15,7 +15,7 @@ class PublicationTest(unittest.TestCase):
             self.assertEqual(result.returncode, 0, result.stderr)
             files = {str(p.relative_to(dest)) for p in dest.rglob('*') if p.is_file()}
             self.assertIn('index.html', files)
-            self.assertIn('img/Guilherme.jpeg', files)
+            self.assertIn('img/guilherme.jpeg', files)
             self.assertIn('script.js', files)
             self.assertFalse(any(p.startswith(('video/', 'curriculo_referencia/', '.git/', '.codex/')) for p in files))
             self.assertFalse(any(p.endswith(('.md', '.docx', '.pdf', '.mp4')) for p in files))
