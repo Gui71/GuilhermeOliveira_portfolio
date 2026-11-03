@@ -1,0 +1,27 @@
+# Referências privadas e instruções locais
+AGENTS.md
+curriculo_referencia/
+.codex/
+.agents/
+.superpowers/
+docs/superpowers/
+.worktrees/
+CLAUDE.md
+GEMINI.md
+**/AGENTS.md
+**/SKILL.md
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.docx
+*.pdf
+__pycache__/
+.venv/
+node_modules/
+dist/
+*.log
+.DS_Store
+# Documentação e instruções permanecem apenas no ambiente local.
+*.[mM][dD]
