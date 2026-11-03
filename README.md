@@ -10,6 +10,13 @@ Projetos: automação de oposições e registros internos; plataforma de inscri�
 
 A formação e a experiência seguem os dados confirmados pelo titular: Gestão de TI concluída em 2024, técnico em Redes concluído em abril de 2026 (1.000h), SENALBA com cargo formal de Assistente Administrativo e experiência anterior em almoxarifado. Tecnologias aplicadas e fundamentos de formação aparecem com contexto, sem alegação de especialidade ou certificação.
 
+## Projetos pessoais adicionados
+
+- **Nosso Infinito — Landing Page Pessoal Interativa:** presente de Dia dos Namorados com composição visual, responsividade e interações multimídia. HTML, CSS e JavaScript confirmados no código. [Acessar projeto](https://amor.matrix.com.br/) · [Repositório GitHub](https://github.com/Gui71/nossoinfinito).
+- **Chá de Casa Nova — Aplicação Web de Lista de Presentes:** apresentação de itens, registro de escolhas e administração com Django, templates HTML, CSS e JavaScript. Experiência de implantação em Linux, Docker e Oracle Cloud conforme contexto fornecido pelo titular. [Acessar projeto](https://casanova.mavensec.com.br/) · [Repositório privado, com acesso restrito](https://github.com/Gui71/presentes), apresentado conforme orientação do titular, sem oferta pública de código-fonte.
+
+Os repositórios foram consultados apenas como referência. Nenhuma fotografia, música, vídeo, dado de convidados ou configuração de produção foi copiada. O endereço HTTPS do Nosso Infinito deve ser preservado mesmo em caso de indisponibilidade temporária. A atualização mantém os projetos anteriores e não altera hospedagem, Docker, Nginx ou infraestrutura.
+
 ## Estrutura
 
 - `index.html`, `styles.css`, `script.js`: página, apresentação e modal acessível da foto.
