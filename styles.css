@@ -196,8 +196,10 @@ section {
   height:auto;
   aspect-ratio:1;
   border-radius:50%;
-  object-fit:cover;
-  object-position:center 24%
+  padding:4%;
+  background:#fff;
+  object-fit:contain;
+  object-position:center
 }
 .portrait a {
   display:block;
